@@ -2,8 +2,9 @@
 # coding: utf-8
 import os
 import pickle
-import pandas as pd
+
 import boto3
+import pandas as pd
 
 s3_endpoint_url = os.getenv('S3_ENDPOINT_URL', 'http://localhost:4566')
 

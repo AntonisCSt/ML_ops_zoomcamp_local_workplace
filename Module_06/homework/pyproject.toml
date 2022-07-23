@@ -6,3 +6,11 @@ disable = [
     "missing-final-newline",
     "redefined-outer-name"
 ]
+
+[tool.black]
+line-length = 92
+target-version = ['py39']
+skip-string-normalization=true
+
+[tool.isort]
+profile=black
