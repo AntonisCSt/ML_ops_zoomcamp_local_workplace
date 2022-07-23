@@ -1,0 +1,12 @@
+services:
+  localstack:
+    image: localstack/localstack:latest
+    ports:
+      - 4566:4566
+    environment:
+      - AWS_DEFAULT_REGION=eu-west-1
+      - SERVICES=s3
+      - S3_ENDPOINT_URL=http://s3:4566/
+    volumes:
+      - "./data:/s3volume"
+  
