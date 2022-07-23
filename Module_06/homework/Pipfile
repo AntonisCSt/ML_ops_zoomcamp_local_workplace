@@ -12,6 +12,9 @@ s3fs = "*"
 [dev-packages]
 pytest = "*"
 boto3 = "*"
+pylint = "==2.14.4"
+black = "*"
+isort = "*"
 
 [requires]
 python_version = "3.9"

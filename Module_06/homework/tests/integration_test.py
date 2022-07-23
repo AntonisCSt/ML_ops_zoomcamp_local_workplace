@@ -12,9 +12,16 @@ options = {
               }
 
 def dt(hour, minute, second=0):
+    """
+    covnerts given hours minutes and senconds to daytime in 2021/1/1
+    """
     return datetime(2021, 1, 1, hour, minute, second)
 
 def test_integration():
+    """
+    Performing intergration test with s3 bucket (localstack)
+    """
+
     data = [
     (None, None, dt(1, 2), dt(1, 10)),
     (1, 1, dt(1, 2), dt(1, 10)),
